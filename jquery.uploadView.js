@@ -87,17 +87,17 @@
 		}
 		//获取上传文件的后缀名
 		var getFileExt = function(fileName){
-			  if (!fileName) {
-				    return '';
-				  }
+			if (!fileName) {
+				return '';
+			}
 				  
-				  var _index = fileName.lastIndexOf('.');
-				  if (_index < 1) {
-				    return '';
-				  }
+			var _index = fileName.lastIndexOf('.');
+			if (_index < 1) {
+				return '';
+			}
 				  
-				  return fileName.substr(_index+1);
-			};
+			return fileName.substr(_index+1);
+		};
 		//是否是允许上传文件格式	
 	    var isAllowFile = function(fileName, allowType){
 
